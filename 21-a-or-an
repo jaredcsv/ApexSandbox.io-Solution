@@ -1,0 +1,21 @@
+public String aOrAn(String word) {
+    //code here
+    // Define an array of vowels as strings
+    String[] vowels = new String[] {'a', 'e', 'i', 'o', 'u'};
+
+    // Declare a variable to store the modified word
+    String newWord;
+
+    // Check if the given word starts with a vowel
+    if(word.startsWith('a') || word.startsWith('e') || word.startsWith('i') || word.startsWith('o') || word.startsWith('u')){
+    // If it does, prepend 'an' to the word
+        newWord = 'an ' + word;
+    }
+    else{
+    // If it doesn't start with a vowel, prepend 'a' to the word
+        newWord = 'a ' + word;
+    }
+
+    // Return the modified word
+    return newWord;
+}
