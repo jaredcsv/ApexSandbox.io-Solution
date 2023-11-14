@@ -1,0 +1,32 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    //code here
+        // Declare and initialize a counter variable to keep track of the number of conditions that are true
+    Integer counter = 0;
+
+    // Declare a List of Booleans named 'passedConditions' and initialize it with the given Boolean values
+    List<Boolean> passedConditions = new List<Boolean>();
+    passedConditions.add(passedExam);
+    passedConditions.add(passedAssignments); 
+    passedConditions.add(passedProject);
+
+    // Iterate through the 'passedConditions' list
+    for(Integer i = 0; i < passedConditions.size(); i++){
+        // Check if the current condition is true
+        if(passedConditions[i] == true){
+            // If true, increment the counter
+            counter += 1;
+        }
+    }
+
+    // Check if the number of true conditions is greater than or equal to 2
+    if(counter >= 2){
+        // If true, return true
+        return true;
+    }
+    else{
+        // If false, return false
+        return false;
+    }
+
+
+}
