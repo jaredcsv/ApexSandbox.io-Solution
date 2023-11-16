@@ -1,0 +1,36 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    Integer hours = Integer.valueOf(strTime.subStringBefore(':'));
+    Integer minutes = Integer.valueof(strTime.subStringAfter(':'));
+    String period = '';
+
+    String formatChanged = '';
+
+    if(hours < 12){
+        period = 'AM';
+        if(hours == 0){
+            period = 'AM';
+            hours = 12;
+        }
+    }
+    else if(hours > 12){
+        period = 'PM';
+        hours -= 12;
+        
+    }
+    else if(hours == 12){
+            period = 'PM';
+        }
+    String formattedHours = String.valueOf(hours);
+    String formattedMinutes = String.valueOf(minutes);
+
+    if(hours < 10){
+        formattedHours = '0' + formattedHours;
+    }
+
+    if(minutes < 10){
+        formattedMinutes = '0' + formattedMinutes;
+    }
+
+    return formatChanged = formattedHours + ':' + formattedMinutes + ' ' + period;
+}
