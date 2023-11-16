@@ -1,0 +1,27 @@
+public Integer nextPrime(Integer num) {
+    //code here
+   if (num < 2) {
+        return 2;
+    }
+
+    num++;
+
+    while (true) {
+        Boolean isCurrentNumberPrime = true;
+
+        for (Integer i = 2; i <= Math.sqrt(num); i++) {
+            if (Math.mod(num, i) == 0) {
+                isCurrentNumberPrime = false;
+                break;
+            }
+        }
+
+        if (isCurrentNumberPrime) {
+            return num;
+        }
+
+        num++;
+    }
+
+    return -1;
+}
