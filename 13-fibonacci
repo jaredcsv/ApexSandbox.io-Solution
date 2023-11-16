@@ -1,0 +1,22 @@
+public Integer fibonacci(Integer n) {
+    //code here
+    Integer actualValue = 0;
+
+    if(n == 1 || n == 2){
+        return 1;
+    }
+    else{
+
+        Integer aValue = 1;
+        Integer bValue = 1;
+        
+        for(Integer i = 3; i <= n; i++){
+           actualValue = aValue + bValue;
+
+           aValue = bValue;
+           bValue = actualValue;
+        }
+
+        return actualValue;
+    }
+}
