@@ -1,0 +1,6 @@
+public List<apxio__Student__c> selectActiveStudents() {
+    // code here
+    List<apxio__Student__c> activeStudents = [SELECT Name, Id FROM apxio__Student__c WHERE apxio__Student__c.apxio__Active__c = True];
+
+    return activeStudents;
+}
