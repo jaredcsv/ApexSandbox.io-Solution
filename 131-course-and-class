@@ -1,0 +1,25 @@
+public void createCourseAndClass(String name, String description) {
+    // code here
+    apxio__Course__C newCourse = new apxio__Course__C();
+
+    newCourse.Name = name;
+    newCourse.apxio__Course_Details__C = description;
+
+    insert newCourse;
+
+    apxio__Class__C newClass = new apxio__Class__C();
+
+    if (description != null) {
+        // Utiliza el método left para truncar la descripción a 255 caracteres si no es nula
+        if (description.length() > 255) {
+            newClass.apxio__Description__C = description.left(255);
+        } else {
+            newClass.apxio__Description__C = description;
+        }
+    }
+
+    newClass.Name = name;
+    newClass.apxio__Course__C = newCourse.Id;
+
+    insert newClass;
+}
