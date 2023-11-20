@@ -1,0 +1,26 @@
+public Id classFromCourse(String courseName) {
+    // code here
+    apxio__Course__c existingCourse;
+
+    //check if it's empty 
+    try{
+        existingCourse = [SELECT Name, Id FROM apxio__Course__c WHERE Name = :courseName LIMIT 1];
+    } catch (System.QueryException e){
+        return null;
+    }
+
+    if(existingCourse != null)
+    {
+        //Create class
+        apxio__Class__c newClass = new apxio__Class__c();
+
+        newClass.Name = courseName;
+        newClass.apxio__Course__c = existingCourse.Id;
+        
+        insert newClass;
+
+        return newClass.Id;
+    }
+
+    return null;
+}
