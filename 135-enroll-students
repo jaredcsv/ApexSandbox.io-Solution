@@ -1,7 +1,5 @@
 public void enrollStudents(List<String> emails, String className) {
     // code here
-    public void enrollStudents(List<String> emails, String className) {
-
     Map<String, apxio__Student__c> emailToStudent = new Map<String, apxio__Student__c>();
     apxio__Class__c selectedClass = [SELECT Id FROM apxio__Class__c WHERE Name = :className LIMIT 1];
     List<apxio__Class_Enrollment__c> newClassEnrollments = new List<apxio__Class_Enrollment__c>();
@@ -27,6 +25,4 @@ public void enrollStudents(List<String> emails, String className) {
     if (!newClassEnrollments.isEmpty()) {
         insert newClassEnrollments;
     }
-}
-
 }
