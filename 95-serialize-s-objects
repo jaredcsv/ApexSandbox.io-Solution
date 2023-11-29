@@ -1,0 +1,8 @@
+public String getAccountsInJSONFormat(List<Account> accounts){
+  // code here
+  String jsonObjectsList = '';
+  
+  jsonObjectsList = String.valueof(JSON.serialize(accounts));
+
+  return jsonObjectsList;
+}
