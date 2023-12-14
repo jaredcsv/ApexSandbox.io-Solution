@@ -1,0 +1,41 @@
+public List<Account> getAccounts(List<Account> accounts) {
+    // code here
+    List<AccountSorter> accountSorters = new List<AccountSorter>();
+    
+    if (accounts == null) {
+        return null;
+    }
+
+    for (Account acc : accounts) {
+        accountSorters.add(new AccountSorter(acc));
+    }
+
+    accountSorters.sort();
+
+    List<Account> result = new List<Account>();
+    for (AccountSorter sorter : accountSorters) {
+        result.add(sorter.acc);
+    }
+
+    return result;
+}
+// write extra class here 
+public class AccountSorter implements Comparable {
+    public Account acc;
+
+    public AccountSorter(Account a) {
+        this.acc = a;
+    }
+
+    public Integer compareTo(Object compareTo) {
+        AccountSorter other = (AccountSorter)compareTo;
+
+        if (this.acc.AnnualRevenue > other.acc.AnnualRevenue) {
+            return -1;
+        } else if (this.acc.AnnualRevenue < other.acc.AnnualRevenue) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+}
