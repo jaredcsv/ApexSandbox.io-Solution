@@ -21,8 +21,7 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
         if(row > maxcount){
             maxcount = row;
         }
-        
-        return maxcount;
     }
 
+    return maxcount;
 }
