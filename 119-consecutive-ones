@@ -17,7 +17,7 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
         onerows.add(counter);
     }
 
-    for(row : onerows){
+    for(Integer row : onerows){
         if(row > maxcount){
             maxcount = row;
         }
