@@ -3,16 +3,22 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
     Integer onecounter = 0;
     List<Integer> onerows = new List<Integer>();
 
-    for(Integer i = 0; i < numbers.size(); i++){
-        if(numbers[i] == 1){
+    for(Integer i = 0; i < numbers.size(); i++) {
+        if(numbers[i] == 1) {
             onecounter++;
-        }
-        else if(i == 0){
-            onerows.add(onecounter);
-            onecounter = 0;
+        } else {
+            if (onecounter > 0) {
+                onerows.add(onecounter);
+                onecounter = 0; // Reiniciar el contador
+            }
         }
     }
-    
+
+        // Agregar el último contador si la secuencia de 1 termina al final de la matriz
+    if (onecounter > 0) {
+        onerows.add(onecounter);
+    }
+
     Integer maxCount = 0;
     
     for(Integer count : onerows) {
