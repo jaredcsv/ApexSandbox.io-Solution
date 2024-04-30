@@ -1,0 +1,12 @@
+public List<Integer> positiveIntegers(List<Integer> numbers) {
+    //code here
+    List<Integer> nonegative = new List<Integer>();
+
+    for(Integer i = 0; i < numbers.size(); i++){
+        if(numbers[i] < 0){
+            nonegative.add(numbers[i]);
+        }
+    }
+
+    return nonegative;
+}
