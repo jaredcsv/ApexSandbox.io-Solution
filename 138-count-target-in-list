@@ -1,0 +1,12 @@
+public Integer findTargetCount(List<Integer> nums, Integer target) {
+    // code here
+    Integer numofappareances = 0;
+
+    for(Integer i = 0; i < nums.size(); i++){
+        if(target == nums[i]){
+            numofappareances++;
+        }
+    }
+
+    return numofappareances;
+}
