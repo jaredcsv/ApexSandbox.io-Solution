@@ -13,5 +13,5 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
         counter = 0;
     }
 
-    return onerows;
+    return onerows[1];
 }
