@@ -1,0 +1,15 @@
+public Integer maxConsecutiveOnes(Integer[] numbers) {
+    //code here
+    Integer counter = 0;
+
+    for(Integer i = 0; i < numbers; i++){
+        if(numbers[i] == 1){
+            counter++;
+        }
+        else{
+            counter = 0;
+        }
+    }
+
+    return counter;
+}
