@@ -1,0 +1,17 @@
+public static Integer findLast(List<Integer> nums, Integer target) {
+   // code here
+   List<Integer> positions = new List<Integer>();
+   
+   for(integer i = 0; i < nums.size(); i++){
+       if(target == nums[i]){
+           positions.add(i);
+       }
+   }
+
+   if(!positions.isEmpty()){
+       return positions[positions.size() - 1];
+   }
+   else{
+       return -1;
+   }
+}
