@@ -3,6 +3,4 @@ public void insertAtStart(String cityName, List<String> cities) {
     if(cities != null){
         cities.add(0, cityName);
     }
-
-    cities.add(1, cityname);
 }
