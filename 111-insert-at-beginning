@@ -1,8 +1,8 @@
 public void insertAtStart(String cityName, List<String> cities) {
     //code here
+    cities.set(0, cityName);
     for(Integer i = 0; i < cities.size(); i++){
         cities.set(cities[i++], cities.[i]);
     }
 
-    cities.set(0, cityName);
 }
