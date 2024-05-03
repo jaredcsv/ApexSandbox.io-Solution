@@ -13,4 +13,6 @@ public boolean isSorted(List<Integer> numbers) {
     if(checkedSort == true){
         return true;
     }
+
+    return false;
 }
