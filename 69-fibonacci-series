@@ -3,11 +3,12 @@ public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> secuenceNums = new List<Integer>();
     Integer prev, curr, past;
 
-    if(n == 1 || n == 2) secuenceNums.add(1);
+    if(n <= 2) secuenceNums.add(1);
 
     return secuenceNums;
 
-    curr = prev = 1;
+    prev = 0;
+    curr = 1;
 
     for(Integer i = 3; i <=n; i++){
         past = prev;
