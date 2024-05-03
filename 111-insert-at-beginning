@@ -6,6 +6,6 @@ public void insertAtStart(String cityName, List<String> cities) {
         cities.set(i + 1, cities.get(i));
     }
 
-    cities[0] = cityName;    
+    cities.set(0, cityName);    
     
 }
