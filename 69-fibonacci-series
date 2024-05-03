@@ -3,10 +3,13 @@ public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> sequenceNums = new List<Integer>();
     Integer prev, curr, past;
 
-    if(n <= 2) sequenceNums.add(1);
-
-    prev = 0;
-    curr = 1;
+    if (n == 1) {
+        sequenceNums.add(0);
+    } else if (n >= 2) {
+        sequenceNums.add(0);
+        sequenceNums.add(1);
+        int prev = 0;
+        int curr = 1;
 
     for (Integer i = 3; i <= n; i++) {
         Integer next = prev + curr;
