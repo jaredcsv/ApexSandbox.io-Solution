@@ -3,9 +3,7 @@ public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> sequenceNums = new List<Integer>();
     Integer prev, curr, past;
 
-    if(n <= 2) secuenceNums.add(1);
-
-    return secuenceNums;
+    if(n <= 2) sequenceNums.add(1);
 
     prev = 0;
     curr = 1;
@@ -16,4 +14,6 @@ public List<Integer> fibonacciSeries(Integer n) {
         prev = curr;
         curr = next;
     }
+
+    return sequenceNums;
 }
