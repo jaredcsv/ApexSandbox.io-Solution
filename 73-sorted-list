@@ -10,5 +10,7 @@ public boolean isSorted(List<Integer> numbers) {
         checkedSort.add(false);
     }
 
-    return checkedSort;
+    if(checkedSort == true){
+        return true;
+    }
 }
