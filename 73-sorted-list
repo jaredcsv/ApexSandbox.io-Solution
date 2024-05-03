@@ -1,16 +1,11 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
-    if(numbers.size() > 3){
-        for(Integer i = numbers.size() - 1; i >= 0; i--){
-            if(numbers[i] > numbers[i + 1]){
-                return true;
-            }
-            else if(numbers[i] < numbers[i + 1]){
-                return true;
-            }
+    Boolean Decreasing = true;
+    Boolean Increasing = true;
+
+    for(Integer i = 0; i < numbers.size() - 1; i++){
+        if(number[i] < numbers[i + 1] && number[i + 1] > numbers[i + 2]){
+            Decreasing = false;
         }
     }
-
-    return true;
-
 }
