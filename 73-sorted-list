@@ -5,6 +5,8 @@ public boolean isSorted(List<Integer> numbers) {
             if(numbers[i] > numbers[i + 1] || numbers[i] < numbers[i + 1]){
                 return true;
             }
+            
+            return false;
         }
     }
 
