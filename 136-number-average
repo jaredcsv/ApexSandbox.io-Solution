@@ -1,0 +1,10 @@
+public Decimal average(List<Decimal> numbers){
+    // your code here
+    List<Integer> roundedNums = List<Integer>();
+
+    for(Integer i = 0; i < numbers.size(); i++){
+        roundedNums.add(numbers[i].setScale(2));
+    }
+    
+    return roundedNums;
+}
