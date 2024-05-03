@@ -4,10 +4,10 @@ public boolean isSorted(List<Integer> numbers) {
     Boolean increasing = true;
 
     for(Integer i = 0; i < numbers.size() - 1; i++){
-        if(number[i] < numbers[i + 1] && number[i + 1] > numbers[i + 2]){
+        if(number[i] < numbers[i + 1]){
             decreasing = false;
         }
     }
 
-    return decreasing
+    return decreasing || increasing;
 }
