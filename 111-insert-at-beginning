@@ -3,5 +3,5 @@ public void insertAtStart(String cityName, List<String> cities) {
     if(cities.size() > 0){
         cities.add(0, cityName);
     }
-    cities.add(1, cityName)
+    cities.add(1, cityName);
 }
