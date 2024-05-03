@@ -1,6 +1,6 @@
 public Decimal average(List<Decimal> numbers){
     // your code here
-    Decimal avg = 0;
+    Decimal avg;
 
     for(Integer i = 0; i < numbers.size(); i++){
         avg += numbers.[i];
