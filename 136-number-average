@@ -6,5 +6,5 @@ public Decimal average(List<Decimal> numbers){
         roundedNums.add(numbers[i].setScale(2));
     }
     
-    return roundedNums;
+    return average(roundedNums);
 }
