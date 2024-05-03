@@ -3,7 +3,6 @@ public Decimal average(List<Decimal> numbers){
     List<Decimal> roundedNums = List<Decimal>();
 
     for(Integer i = 0; i < numbers.size(); i++){
-        roundedNums.add(numbers[i].setScale(2));
     }
     
     return average(roundedNums);
