@@ -1,8 +1,9 @@
 public Decimal average(List<Decimal> numbers){
     // your code here
-    List<Decimal> roundedNums = List<Decimal>();
+    List<Decimal> roundedNums = new List<Decimal>();
 
     for(Integer i = 0; i < numbers.size(); i++){
+        roundedNums.add(numbers[i].setScale(2));
     }
     
     return average(roundedNums);
