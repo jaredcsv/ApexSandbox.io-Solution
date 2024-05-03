@@ -2,19 +2,10 @@ public boolean isSorted(List<Integer> numbers) {
     //code here
     List<Boolean> checkedSort = new List<Boolean>();
 
-    for(Integer i = 0; i > numbers.size(); i++){
-        if(numbers[i] > numbers[i + 1]){
-            checkedSort.add(true);
-        }
+    if(numbers.size() > 3){
 
-        checkedSort.add(false);
     }
 
-    for(Boolean bool : checkedSort){
-        if(bool == true){
-            return true;
-        }
-    }
+    return true;
 
-    return false;
 }
