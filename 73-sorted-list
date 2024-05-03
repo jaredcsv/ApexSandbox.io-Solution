@@ -1,13 +1,13 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
-    List<boolean> checked
-    boolean checkedSort = false;
+    List<Boolean> checkedSort = new List<Boolean>();
 
     for(Integer i = 0; i > numbers.size(); i++){
         if(numbers[i] > numbers[i + 1]){
-            checkedSort = true;
+            checkedSort.add(true);
         }
-        checkedSort = false;
+
+        checkedSort.add(false);
     }
 
     return checkedSort;
