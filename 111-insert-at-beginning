@@ -1,9 +1,4 @@
 public void insertAtStart(String cityName, List<String> cities) {
     //code here
-    if(cities != null){
-        cities.add(0, cityName);
-    }
-    else if (cities.size() < 0){
-        cities.add(cityName);
-    }
+    cities.add(0, cityName);
 }
