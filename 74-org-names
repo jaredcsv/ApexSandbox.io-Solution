@@ -2,10 +2,8 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
     //code here
     List<String> concatenatedNames = new List<String>();
 
-    if(!adjectives.isEmpty()){
-        for(Integer i = 0; i < adjectives.size(); i++){
-            concatenatedNames.add(adjectives[i] + '-' + animals[i]);
-        }
+    for(Integer i = 0; i < adjectives.size(); i++){
+        concatenatedNames.add(adjectives[i] + '-' + animals[i]);
     }
 
     return concatenatedNames;
