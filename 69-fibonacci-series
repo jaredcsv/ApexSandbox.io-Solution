@@ -1,6 +1,6 @@
 public List<Integer> fibonacciSeries(Integer n) {
     //code here
-    List<Integer> secuenceNums = new List<Integer>();
+    List<Integer> sequenceNums = new List<Integer>();
     Integer prev, curr, past;
 
     if(n <= 2) secuenceNums.add(1);
