@@ -4,7 +4,7 @@ public List<Integer> fibonacciSeries(Integer n) {
     Integer prev, curr, past;
 
     if (n == 1) {
-        sequenceNums.add(0);
+        sequenceNums.add(1);
     } else if (n >= 2) {
         sequenceNums.add(0);
         sequenceNums.add(1);
