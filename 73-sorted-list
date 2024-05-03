@@ -3,7 +3,11 @@ public boolean isSorted(List<Integer> numbers) {
     List<Boolean> checkedSort = new List<Boolean>();
 
     if(numbers.size() > 3){
-
+        for(Integer i = 0; i < numbers.size(); i++){
+            if(num[i] > num[i + 1] || num[i] < num[i + 1]){
+                return true
+            }
+        }
     }
 
     return true;
