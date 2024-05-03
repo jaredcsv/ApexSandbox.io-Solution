@@ -2,9 +2,9 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
     //code here
     List<String> concatenatedNames = new List<String>();
 
-    for(String name : animals){
+    for(String animal : animals){
         for(String adj : adjectives){
-            concatenatedNames.add(adj + '-' + name);
+            concatenatedNames.add(adj + '-' + animal);
         }
     }
 
