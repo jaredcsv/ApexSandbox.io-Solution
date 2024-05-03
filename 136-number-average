@@ -8,7 +8,7 @@ public Decimal average(List<Decimal> numbers){
     }
 
     for(Integer j = 0; j < roundedNums.size(); j++){
-        avg+=roundedNums.[j];
+        avg += roundedNums.[j];
     }
     
     return avg / roundedNums.size();
