@@ -1,9 +1,9 @@
 public Decimal average(List<Decimal> numbers){
     // your code here
-    Decimal avg;
+    Decimal result;
 
     for(Integer i = 0; i < numbers.size(); i++){
-        avg += numbers.[i];
+        result = numbers.[i];
     }
     
     return avg / numbers.size();
