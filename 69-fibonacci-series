@@ -2,4 +2,6 @@ public List<Integer> fibonacciSeries(Integer n) {
     //code here
     List<Integer> secuenceNums = new List<Integer>();
     Integer prev, curr, past;
+
+    return secuenceNums;
 }
