@@ -2,7 +2,7 @@ public void insertAtStart(String cityName, List<String> cities) {
     //code here
     for(Integer i = cities.size() - 1; i >= 0; i--){
         //inverted iterations in order to avoid having the same number
-        cities.add(i + 1, cities[i]);
+        cities.add(i + 1, cities.get(i));
     }
 
     cities.set(0, cityName);
