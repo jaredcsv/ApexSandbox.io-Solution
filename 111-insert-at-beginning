@@ -4,5 +4,5 @@ public void insertAtStart(String cityName, List<String> cities) {
         cities.add(0, cityName);
     }
 
-    cities.add(cityname);
+    cities.add(1, cityname);
 }
