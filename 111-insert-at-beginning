@@ -1,4 +1,11 @@
 public void insertAtStart(String cityName, List<String> cities) {
     //code here
-    cities[0] = cityName;     
+    cities[0] = cityName;    
+
+    if(cityName != null){
+        for(Integer i = cities.size() - 1; i >= 0; i--){
+        //inverted iterations in order to avoid having the same number
+        cities.set(i + 1, cities.get(i));
+    }
+    
 }
