@@ -10,8 +10,10 @@ public boolean isSorted(List<Integer> numbers) {
         checkedSort.add(false);
     }
 
-    if(checkedSort == true){
-        return true;
+    for(Boolean bool : checkedSort){
+        if(bool == true){
+            return true;
+        }
     }
 
     return false;
