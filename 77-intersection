@@ -1,0 +1,14 @@
+public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
+    //code here
+    Set<Integer> intersectedSet = new Set<Integer>();
+
+    for(Integer num1 : set1){
+        for(Integer num2 : set2){
+            if(num1 = num2){
+                intersectedSet.add(num1);
+            }
+        }
+    }
+
+    return intersectedSet;
+}
