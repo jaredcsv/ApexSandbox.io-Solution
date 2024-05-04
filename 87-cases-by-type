@@ -5,11 +5,9 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     for(Case cs : cases){
         if(!orderedCases.containsKey(cs.Type)){
             orderedCases.put(cs.Type, new List<Case>());
-            if(orderedCases.containsKey(cs.Type) == cs.Type){
-                orderedCases.get(cs.Type).add(cs);
-            }
         }
 
+        orderedCases.put(cs.Type, orderedCases.containsKey(cs.Type).add(cs));
     }
 
     return orderedCases;
