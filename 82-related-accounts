@@ -6,6 +6,8 @@ public Set<Id> accountIds(List<Opportunity> opps) {
         if(opps[i].AccountId != null){
             extractedIds.add(opps[i].AccountId);
         }
+        
+        extractedIds.add(opps[i].AccountId);
     }
 
     return extractedIds;
