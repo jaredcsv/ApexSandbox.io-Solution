@@ -1,6 +1,5 @@
 public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
     //code here
-    if(employeeIdToEmail.containsKey(employeeId)){
-        return employeeIdToEmail.get(employeeId);
-    }
+    return employeeIdToEmail.get(employeeId);
+    
 }
