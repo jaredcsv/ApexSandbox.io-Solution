@@ -6,6 +6,9 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
         if(!summedUpRevenues.containsKey(acc.Industry)){
             summedUpRevenues.put(acc.Industry, acc.AnnualRevenue);
         }
+        else if(summedUpRevenues.containsKey(acc.Industry)){
+            summedUpRevenues.put(acc.Industry, +=acc.AnnualRevenue)
+        }
     }
 
     return summedUpRevenues;
