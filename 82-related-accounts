@@ -1,14 +1,15 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     //code here
     Set<Id> extractedIds = new Set<Id>();
-    if(opps.isEmpty()){
-        for(Integer i = opps.size() - 1; i > 0; i--){
+
+    for(Integer i = opps.size() - 1; i > 0; i--){
+        //not nulls
+        if(opps[i].AccountId != null && opps[i - 1].AccountId != null){
             if(opps[i].AccountId == opps[i - 1].AccountId){
                 extractedIds.add(opps[i].AccountId);
             }
         }
     }
-
 
     return extractedIds;
 }
