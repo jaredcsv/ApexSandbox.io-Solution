@@ -15,7 +15,7 @@ public Integer secondLargest(List<Integer> numbers) {
 
     toSortList.sort();
 
-    result = toSortList[toSortList.size() - 1];
+    result = toSortList[toSortList.size() - 2];
 
     return result;
 }
