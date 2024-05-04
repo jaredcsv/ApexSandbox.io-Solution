@@ -6,7 +6,9 @@ public Integer secondLargest(List<Integer> numbers) {
     Set<Integer> noRepeatedNums = new Set<Integer>();
 
     for(Integer num : numbers){
-        noRepeatedNums.add(num);
+        if(!noRepeatedNums.contains(num)){
+            noRepeatedNums.add(num);
+        }
     }
 
     List<Integer> toSortList = new List<Integer>(noRepeatedNums);
