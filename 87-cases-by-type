@@ -7,6 +7,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
             orderedCases.put(cs.Type, new List<Case>());
         }
 
+        orderedCases.get(cs.Type).add(cs);
 
     }
 
