@@ -1,6 +1,5 @@
 public Boolean containsDuplicates(List<Integer> nums) {
     //code here
-    Boolean result = false;
     nums.sort();
 
     for(Integer i = nums.size() - 1; i > 0; i--){
@@ -9,5 +8,5 @@ public Boolean containsDuplicates(List<Integer> nums) {
         }
     }
 
-    return result;
+    return false;
 }
