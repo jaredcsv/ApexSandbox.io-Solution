@@ -9,7 +9,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
         }
     }
     else{
-        return 1;
+        extractedIds = null;
     }
 
     return extractedIds;
