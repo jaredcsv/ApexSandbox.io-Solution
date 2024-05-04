@@ -8,7 +8,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
                 extractedIds.add(opps[i].AccountId);
             }
         }
-        else if(opps[i].AccountId != null){
+        else if(opps[i].AccountId == null){
             extractedIds.add(opps[i].AccountId);
         }
     }
