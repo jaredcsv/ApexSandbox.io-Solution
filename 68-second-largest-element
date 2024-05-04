@@ -5,11 +5,16 @@ public Integer secondLargest(List<Integer> numbers) {
 
     List<Integer> noRepeatedNums = new List<Integer>();
 
-    for(Integer i = numbers.size() - 1; i > 0; i--){
-        if(numbers[i] != numbers[i - 1]){
-            noRepeatedNums.add(numbers[i]);
+    if(numbers.size() > 2){
+        for(Integer i = numbers.size() - 1; i > 0; i--){
+            if(numbers[i] != numbers[i - 1]){
+                noRepeatedNums.add(numbers[i]);
+            }
         }
+
+        result = noRepeatedNums[1];
     }
+
 
     result = noRepeatedNums[1];
 
