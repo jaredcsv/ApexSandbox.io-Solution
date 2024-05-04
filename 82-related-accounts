@@ -1,12 +1,12 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     //code here
     Set<Id> extractedIds = new Set<Id>();
-for(Integer i = opps.size() - 1; i > 0; i--){
-        if(opps[i].AccountId != null && opps[i - 1].AccountId != null && opps[i].AccountId == opps[i - 1].AccountId){
+
+    for(Integer i = opps.size() - 1; i >= 0; i--){
+        if(opps[i].AccountId != null){
             extractedIds.add(opps[i].AccountId);
         }
     }
-
 
     return extractedIds;
 }
