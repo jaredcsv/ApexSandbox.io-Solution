@@ -7,4 +7,6 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
             summedUpRevenues.put(acc.Industry, acc.AnnualRevenue);
         }
     }
+
+    return summedUpRevenues;
 }
