@@ -2,12 +2,12 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     //code here
     Map<String, List<Case>> orderedCases = new Map<String, List<Case>>();
 
-    for(Case case : cases){
-        if(!orderedCases.containsKey(case.Type)){
-            orderedCases.put(case.Type, null);
+    for(Case cs : cases){
+        if(!orderedCases.containsKey(cs.Type)){
+            orderedCases.put(cs.Type, null);
         }
 
-        
+
     }
 
     return orderedCases;
