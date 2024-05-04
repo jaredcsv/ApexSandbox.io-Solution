@@ -7,7 +7,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
             summedUpRevenues.put(acc.Industry, acc.AnnualRevenue);
         }
         else if(summedUpRevenues.containsKey(acc.Industry)){
-            summedUpRevenues.put(acc.Industry, summedUpRevenues.get(acc.Industry) += acc.AnnualRevenue);
+            summedUpRevenues.put(acc.Industry, summedUpRevenues.get(acc.Industry) + acc.AnnualRevenue);
         }
     }
 
