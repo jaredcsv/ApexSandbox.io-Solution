@@ -3,15 +3,18 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     Map<String, List<Case>> orderedCases = new Map<String, List<Case>>();
 
     for(Case cs : cases){
-        if(!orderedCases.containsKey(cs.Type)){
-            orderedCases.put(cs.Type, new List<Case>());
-        }
+            if(cs.Type != null){
+                if(!orderedCases.containsKey(cs.Type)){
+                orderedCases.put(cs.Type, new List<Case>());
+            }
 
-        List<Case> caseList = orderedCases.get(cs.Type);
-        if (!caseList.contains(cs)) {
-            caseList.add(cs);
-            orderedCases.put(cs.Type, caseList);
-        }   
+            List<Case> caseList = orderedCases.get(cs.Type);
+            if (!caseList.contains(cs)) {
+                caseList.add(cs);
+                orderedCases.put(cs.Type, caseList);
+            } 
+        }
+  
     }
 
     return orderedCases;
