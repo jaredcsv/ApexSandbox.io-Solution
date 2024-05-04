@@ -5,7 +5,7 @@ public Integer secondLargest(List<Integer> numbers) {
 
     List<Integer> noRepeatedNums = new List<Integer>();
 
-    for(Integer i = numbers.size(); i >= 0; i--){
+    for(Integer i = numbers.size(); i > 0; i--){
         if(numbers[i] != numbers[i - 1]){
             noRepeatedNums.add(numbers[i]);
         }
