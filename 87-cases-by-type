@@ -4,8 +4,10 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
 
     for(Case case : cases){
         if(!orderedCases.containsKey(case.Type)){
-            orderedCases.put(case.Type, List<case>());
+            orderedCases.put(case.Type, null);
         }
+
+        
     }
 
     return orderedCases;
