@@ -10,8 +10,6 @@ public List<Account> getAccounts(List<Account> accounts) {
         accountSorters.add(new AccountSorter(acc));
     }
 
-    accountSorters.sort();
-
     List<Account> result = new List<Account>();
     for (AccountSorter sorter : accountSorters) {
         result.add(sorter.acc);
