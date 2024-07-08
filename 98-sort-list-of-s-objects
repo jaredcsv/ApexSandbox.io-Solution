@@ -10,12 +10,7 @@ public List<Account> getAccounts(List<Account> accounts) {
         accountSorters.add(new AccountSorter(acc));
     }
 
-    List<Account> result = new List<Account>();
-    for (AccountSorter sorter : accountSorters) {
-        result.add(sorter.acc);
-    }
-
-    return result;
+    return accountSorters;
 }
 // write extra class here 
 public class AccountSorter implements Comparable {
