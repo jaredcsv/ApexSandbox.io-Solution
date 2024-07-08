@@ -14,8 +14,8 @@ public List<Account> getAccounts(List<Account> accounts) {
 
     List<Account> result =  new List<Account>();
 
-    for(Account accountSorter : accountSorters){
-        result.add(accountSorter.acc);
+    for(Account sorter : accountSorters){
+        result.add(sorter.acc);
     }
 
     return result;
