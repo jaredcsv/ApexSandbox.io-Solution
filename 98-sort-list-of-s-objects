@@ -10,7 +10,7 @@ public List<Account> getAccounts(List<Account> accounts) {
         accountSorters.add(new AccountSorter(acc));
     }
 
-    accountSorters.sorter();
+    accountSorters.sort();
 
     return accountSorters;
 }
