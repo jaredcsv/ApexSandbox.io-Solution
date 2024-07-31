@@ -20,7 +20,6 @@ public Boolean isKeyAccount(Account a) {
         if(a.AnnualRevenue >= 2000000){
             return true;
         }
-        return false;
     }
     when else {		  // default block, optional
         // code block 4
