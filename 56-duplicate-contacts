@@ -4,11 +4,11 @@ public Boolean duplicateContacts(Contact c1, Contact c2) {
         return true;
     }
     
-    else if(c1.Phone == null || c2.Phone == null){
+    else if(c1.Phone == null && c2.Phone == null){
         return false;
     }
 
-    else if (c1.Email == null || c2.Email == null){
+    else if (c1.Email == null && c2.Email == null){
         return false;
     }
 
