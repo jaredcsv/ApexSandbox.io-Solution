@@ -22,7 +22,7 @@ public Boolean isKeyAccount(Account a) {
         }
         return false;
     }
-    when 'All others' {		  // default block, optional
+    when else {		  // default block, optional
         // code block 4
         if(a.AnnualRevenue  >= 500000){
             return true;
