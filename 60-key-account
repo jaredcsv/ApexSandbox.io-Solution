@@ -6,14 +6,12 @@ public Boolean isKeyAccount(Account a) {
         if(a.AnnualRevenue >= 600000){
             return true;
         }
-        return false;
     }
     when 'Technology' {		// when block 2
         // code block 2
         if(a.AnnualRevenue >= 800000){
             return true;
         }
-        return false;
     }
     when 'Retail' {		// when block 3
         // code block 3
