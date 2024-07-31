@@ -7,6 +7,27 @@ public Boolean isKeyAccount(Account a) {
             return true;
         }
         return false;
+    }
+    when 'Technology' {		// when block 2
+        // code block 2
+        if(a.AnnualRevenue >= 800000){
+            return true;
+        }
+        return false;
+    }
+    when 'Retail' {		// when block 3
+        // code block 3
+        if(a.AnnualRevenue >= 2000000){
+            return true;
+        }
+        return false;
+    }
+    when 'All others' {		  // default block, optional
+        // code block 4
+        if(a.AnnualRevenue >= 500000){
+            return true;
+        }
+        return false;
     }	
 }
 
