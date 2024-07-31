@@ -1,0 +1,8 @@
+public Boolean duplicateContacts(Contact c1, Contact c2) {
+    //code here
+    if(c1.LastName == c2.LastName && c1.Email == c1.Email){
+        return true;
+    }
+
+    return false;
+}
