@@ -1,6 +1,6 @@
 public Boolean isBirthday(Contact c) {
     //code here
-    if(c.isBirthday == System.Today()){
+    if(c.Birthdate == System.Today()){
         return true;
     }
 }
