@@ -1,0 +1,21 @@
+public Boolean isKeyAccount(Account a) {
+    //code here
+    switch on Industry {
+    when 'Banking' {		// when block 1
+        // code block 1
+        if(a.AnnualRevenue >= 600000){
+            return true;
+        }
+        return false;
+    }	
+    when value2 {		// when block 2
+        // code block 2
+    }
+    when value3 {		// when block 3
+        // code block 3
+    }
+    when else {		  // default block, optional
+        // code block 4
+    }
+}
+}
