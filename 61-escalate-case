@@ -4,4 +4,6 @@ public void escalateIfMeetsCriteria(Case c) {
         c.IsEscalated = true;
     }
 
+    c.IsEscalated = false;
+
 }
