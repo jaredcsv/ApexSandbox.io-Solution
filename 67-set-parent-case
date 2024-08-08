@@ -1,15 +1,10 @@
 public void linkParent(Case c1, Case c2) {
     //code here
-    Datetime dt1 = DateTime.newInstance(c1.CreatedDate);
-    DateTime dt2 = DateTime.newInstance(c2.CreatedDate);
-
     if(c1 != null && c2 != null){
         if(c1.ContactId == c2.ContactId0){
-            if(dt1 >= dt2){
+            if(c1.CreatedDate >= c2.CreatedDate){
                 c1.CaseId = c2.Id;
             }
-
-            c2.CaseId = c1.Id;
         }
     }
 }
