@@ -1,7 +1,7 @@
 public void linkParent(Case c1, Case c2) {
     //code here
-    Datetime dt1 = DateTime.NewInstance(c1.CreatedDate);
-    DateTime dt2 = DateTime.NewInstance(c2.CreatedDate);
+    Datetime dt1 = DateTime.newInstance(c1.CreatedDate);
+    DateTime dt2 = DateTime.newInstance(c2.CreatedDate);
 
     if(c1 != null && c2 != null){
         if(c1.ContactId == c2.ContactId0){
