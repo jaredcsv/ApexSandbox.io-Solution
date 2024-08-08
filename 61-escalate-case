@@ -4,8 +4,8 @@ public void escalateIfMeetsCriteria(Case c) {
         c.Reason == 'Breakdown' && 
         c.Status == 'In Progress') {
         c.IsEscalated = true;  // Set IsEscalated to true if all conditions are met
-    } else {
-        c.IsEscalated = false; // Otherwise, set IsEscalated to false
+    } else if (c.IsEscalated == false) {
+        c.IsEscalated = false;
     }
 
 }
