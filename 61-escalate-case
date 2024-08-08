@@ -1,9 +1,7 @@
 public void escalateIfMeetsCriteria(Case c) {
     //code here
-    if ((c.Type == 'Mechanical' || c.Type == 'Electrical') && 
-        c.Reason == 'Breakdown' && 
-        c.Status == 'In Progress') {
-        c.IsEscalated = true;  // Set IsEscalated to true if all conditions are met
+    if ((c.Type == 'Mechanical' || c.Type == 'Electrical') && c.Reason == 'Breakdown' && c.Status == 'In Progress') {
+        c.IsEscalated = true;
     } else if (c.IsEscalated == false) {
         c.IsEscalated = false;
     }
