@@ -3,7 +3,7 @@ public class Stack {
     
     public void push(Object obj) {
         //implement push
-        stack.push(obj);
+        stack.add(obj);
     }
     
     public Object pop() {
