@@ -13,7 +13,7 @@ public class Stack {
     
     public Integer size() {
         //implement size
-        stack.size();
+        return stack.size();
     }
 
     public Object peek(){
@@ -23,6 +23,6 @@ public class Stack {
     
     public Boolean isEmpty() {
         //implement isEmpty
-        stack.isEmpty();
+        return stack.isEmpty();
     }
 }
