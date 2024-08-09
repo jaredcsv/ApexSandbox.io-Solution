@@ -8,17 +8,21 @@ public class Stack {
     
     public Object pop() {
         //implement pop
+        stack.remove(obj);
     }
     
     public Integer size() {
         //implement size
+        stack.size();
     }
-    
+
     public Object peek(){
         //implement peek
+        return stack[0]; 
     }
     
     public Boolean isEmpty() {
         //implement isEmpty
+        stack.isEmpty();
     }
 }
