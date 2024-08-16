@@ -1,9 +1,22 @@
 public class LinkedList{
     private Node head;
     private Node tail;
-    private Integer listsize = 0;
+    private Integer size = 0;
     
-    public void addToFront(Integer value){}
+    public void addToFront(Integer value){
+        Node newNode = new Node(value);
+
+        if(head == null){
+            head = newNode;
+            tail = newNode;
+        }
+        else {
+            newNode.next = head;
+            head = newNode;
+        }
+
+        size++;
+    }
     public Integer removeFromFront(){}
     public void addToTail(Integer value){}
     public Integer removeFromTail(){}
