@@ -65,7 +65,7 @@ public class LinkedList{
         Node current = head;
         
         while(current.next != tail){
-            current = currrent.next;
+            current = current.next;
         }
 
         Integer removed = tail.data;
