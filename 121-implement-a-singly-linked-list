@@ -17,7 +17,21 @@ public class LinkedList{
 
         size++;
     }
-    public Integer removeFromFront(){}
+
+    public Integer removeFromFront(){
+        if(head == null){
+            return null;
+        }
+        
+        Integer removed = head.data;
+        head = head.next;
+
+        if(head == null){
+            tail = null;
+        }
+
+        return removed;
+    }
     public void addToTail(Integer value){}
     public Integer removeFromTail(){}
     public Integer size(){}
