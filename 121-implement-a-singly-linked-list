@@ -1,0 +1,21 @@
+public class LinkedList{
+    private Node head;
+    private Node tail;
+    private Integer listsize = 0;
+    
+    public void addToFront(Integer value){}
+    public Integer removeFromFront(){}
+    public void addToTail(Integer value){}
+    public Integer removeFromTail(){}
+    public Integer size(){}
+}
+
+public class Node{
+    Integer data;
+    Node next;
+
+    public Node(Integer data){
+        this.data = data;
+        this.next = null;
+    }
+}
