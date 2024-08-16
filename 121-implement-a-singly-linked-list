@@ -76,7 +76,9 @@ public class LinkedList{
         return removed;
     }
 
-    public Integer size(){}
+    public Integer size(){
+        return size;
+    }
 }
 
 public class Node{
