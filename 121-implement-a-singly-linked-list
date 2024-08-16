@@ -32,8 +32,50 @@ public class LinkedList{
 
         return removed;
     }
-    public void addToTail(Integer value){}
-    public Integer removeFromTail(){}
+
+    public void addToTail(Integer value){
+        Node newNode = new Node(value);
+
+        if(tail == null){
+            head = newNode;
+            tail = newNode;
+        } 
+        else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+
+        size++;
+    }
+
+    public Integer removeFromTail(){
+        if(tail == null){
+            return null;
+        }
+
+        if(head == tail){
+            Integer removed = head.data;
+            head = null;
+            tail = null;
+            size--;
+
+            return removed;
+        }
+
+        Node current = head;
+        
+        while(current.next != tail){
+            current = currrent.next;
+        }
+
+        Integer removed = tail.data;
+        tail = current;
+        tail.next = null;
+        size--;
+
+        return removed;
+    }
+
     public Integer size(){}
 }
 
