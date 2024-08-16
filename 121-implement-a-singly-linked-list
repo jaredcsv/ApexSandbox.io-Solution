@@ -25,6 +25,7 @@ public class LinkedList{
         
         Integer removed = head.data;
         head = head.next;
+        size--;
 
         if(head == null){
             tail = null;
