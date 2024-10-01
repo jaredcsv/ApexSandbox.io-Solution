@@ -3,7 +3,7 @@ public Boolean isPalindrome(String str){
 String formatedStr = str.toLowerCase().replaceAll('[^a-zA-Z0-9]', '');
 String reversedStr = str.reverse();
 
-if(formatedStr == reversedStr){
+if(formatedStr === reversedStr){
     return true;
 }
 
