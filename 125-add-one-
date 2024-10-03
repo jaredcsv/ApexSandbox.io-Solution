@@ -15,6 +15,6 @@ public void plusOne(List<Integer> numbers) {
     List<Integer> withPlusOne = new List<Integer>();
     
     for (Integer i = 0; i < strNumbersList.size(); i++) {
-        withPlusOne.add(strNumbersList[i]);
+        withPlusOne.add(Integer.valueOf(strNumbersList[i]));
     }
 }
