@@ -1,9 +1,20 @@
 public void plusOne(List<Integer> numbers) {
     // code here
-    String strNumber = numbers.toString();
+    String strNumber = '';
+
+    for (Integer num : numbers) {
+        strNumber += String.valueOf(num);
+    }
+
     Integer intNumber = Integer.valueOf(strNumber) + 1;
 
     strNumber = String.valueOf(intNumber);
+
+    List<String> strNumbersList = strNumber.split('');
+
+    List<Integer> withPlusOne = new List<Integer>();
     
-    List<String> withPlusOne = strNumber.split('');
+    for (Integer i = 0; i < strNumbersList.size(); i++) {
+        withPlusOne.add(strNumbersList[i]);
+    }
 }
