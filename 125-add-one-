@@ -4,6 +4,6 @@ public void plusOne(List<Integer> numbers) {
 
     for(Integer i = numbers.size() - 1; i >= 0; i--){
         Integer sum = numbers[i] + carry;
-        numbers[i] = sum % 10;
+        numbers[i] = Math.mod(sum, 10);
     }
 }
