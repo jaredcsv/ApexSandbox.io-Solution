@@ -1,11 +1,10 @@
 public boolean isAnagram(String s1, String s2) {
     //Code here
-    List<String> s1List = s1.split('').sort();
-    List<String> s2List = s2.split('').sort();
+    List<String> s1List = s1.split('');
+    List<String> s2List = s2.split('');
+    
+    s1.sort();
+    s2.sort();
 
-    if(s1.length() == s2.length()){
-        
-    }
-
-    return false;
+    return  s1.equals(s1);
 }
