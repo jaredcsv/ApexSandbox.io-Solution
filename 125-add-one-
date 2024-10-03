@@ -1,7 +1,7 @@
 public void plusOne(List<Integer> numbers) {
     // code here
     String strNumber = numbers.toString();
-    Integer intNumber = String.valueOf(strNumber) + 1;
+    Integer intNumber = Integer.valueOf(strNumber) + 1;
 
     strNumber = String.valueOf(intNumber);
     
