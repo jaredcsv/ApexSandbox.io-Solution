@@ -1,0 +1,15 @@
+public static Integer search(List<Opportunity> opportunities, Integer target){
+    // solution here
+    Integer low = 0;
+    Integer high = opportunities.size() - 1;
+
+    while(low <= high){
+        Integer mid = (low + high) / 2;
+
+        if(opportunities[mid] == target){
+            return mid;
+        }
+    }
+
+
+}
