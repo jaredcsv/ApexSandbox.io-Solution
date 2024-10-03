@@ -1,6 +1,6 @@
 public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2){
     // solution
-    <Integer> mergedList = new List<Integer>();
+    List<Integer> mergedList = new List<Integer>();
 
     for(Int i = 0; i < list1.length(); i++){
         for(Int j = 0; j < list2.length(); j++){
