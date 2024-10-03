@@ -1,9 +1,9 @@
 public boolean isAnagram(String s1, String s2) {
     //Code here
-    if(s1.length() == s2.length()){
-        List<String> s1List = s1.split('').sort();
-        List<String> s2List = s2.split('').sort();
+    List<String> s1List = s1.split('').sort();
+    List<String> s2List = s2.split('').sort();
 
+    if(s1.length() == s2.length()){
         for(Integer i = 0; i < s1.length; i++){
             if(s1[i] == s2[i]){
                 return true;
