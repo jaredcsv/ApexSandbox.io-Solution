@@ -1,0 +1,11 @@
+public void plusOne(List<Integer> numbers) {
+    // code here
+    String strNumber = numbers.toString();
+    Integer intNumber = String.valueOf(strNumber) + 1;
+
+    strNumber = String.valueOf(intNumber);
+    
+    List<Integer> withPlusOne = strNumber.split('');
+
+    return withPlusOne;
+}
