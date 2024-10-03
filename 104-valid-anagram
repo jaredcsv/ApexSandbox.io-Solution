@@ -6,5 +6,5 @@ public boolean isAnagram(String s1, String s2) {
     s1.sort();
     s2.sort();
 
-    return  s1.equals(s1);
+    return  isAnagram = s1.equals(s2);
 }
