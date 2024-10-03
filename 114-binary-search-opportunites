@@ -9,6 +9,12 @@ public static Integer search(List<Opportunity> opportunities, Integer target){
         if(opportunities[mid].amount == target){
             return mid;
         }
+        else if(opportunities[mid].amount < target){
+            low = mid + 1;
+        }
+        else{
+            high = mid - 1;
+        }
     }
 
     return -1;
