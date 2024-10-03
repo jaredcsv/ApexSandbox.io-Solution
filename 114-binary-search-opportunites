@@ -6,7 +6,7 @@ public static Integer search(List<Opportunity> opportunities, Integer target){
     while(low <= high){
         Integer mid = (low + high) / 2;
 
-        if(opportunities.[mid] == target){
+        if(opportunities[mid].amount == target){
             return mid;
         }
     }
