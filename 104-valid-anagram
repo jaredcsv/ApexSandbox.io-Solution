@@ -3,7 +3,7 @@ public boolean isAnagram(String s1, String s2) {
     if(s1.length() != s2.length()){
         return false;
     }
-    
+
     List<String> s1List = s1.split('');
     List<String> s2List = s2.split('');
     
@@ -13,8 +13,10 @@ public boolean isAnagram(String s1, String s2) {
 
 
     for(Integer i = 0; i < s1List.size(); i++){
-        if(s1List[i] == s2List[i]){
-            return true;
+        if(s1List[i] != s2List[i]){
+            return false;
         }
     }
+
+    return true;
 }
