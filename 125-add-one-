@@ -1,13 +1,13 @@
 public void plusOne(List<Integer> numbers) {
     // code here
     String strNumber = '';
-    Integer intNumber = 0;
 
     for (Integer num : numbers) {
         strNumber += String.valueOf(num);
     }
 
-    intNumber = Integer.valueOf(strNumber) + 1;
+    Integer intNumber = Integer.valueOf(strNumber);
+    intNumber =+ 1;
 
     strNumber = String.valueOf(intNumber);
 
