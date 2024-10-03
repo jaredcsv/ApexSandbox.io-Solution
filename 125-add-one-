@@ -10,11 +10,9 @@ public void plusOne(List<Integer> numbers) {
 
     strNumber = String.valueOf(intNumber);
 
-    List<String> strNumbersList = strNumber.split('');
-
     List<Integer> withPlusOne = new List<Integer>();
     
-    for (Integer i = 0; i < strNumbersList.size(); i++) {
-        withPlusOne.add(Integer.valueOf(strNumbersList[i]));
+    for (Integer i = 0; i < strNumber.length(); i++) {
+        withPlusOne.add(Integer.valueOf(strNumber.substring(i, i + 1)));
     }
 }
