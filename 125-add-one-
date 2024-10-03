@@ -1,19 +1,18 @@
 public void plusOne(List<Integer> numbers) {
     // code here
     String strNumber = '';
-
+    
     for (Integer num : numbers) {
         strNumber += String.valueOf(num);
     }
 
-    Integer intNumber = Integer.valueOf(strNumber);
-    intNumber =+ 1;
+    Integer intNumber = Integer.valueOf(strNumber) + 1;
 
     strNumber = String.valueOf(intNumber);
 
     List<Integer> withPlusOne = new List<Integer>();
-    
+
     for (Integer i = 0; i < strNumber.length(); i++) {
-        withPlusOne.add(Integer.valueOf(strNumber.substring(i, i + 1)));
+        numbers.add(Integer.valueOf(strNumber.substring(i, i + 1)));
     }
 }
