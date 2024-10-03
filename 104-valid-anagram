@@ -1,6 +1,5 @@
 public boolean isAnagram(String s1, String s2) {
     //Code here
-
     List<String> s1List = s1.split('');
     List<String> s2List = s2.split('');
     
