@@ -4,5 +4,8 @@ public void plusOne(List<Integer> numbers) {
         if(numbers[i] < 9){
             numbers[i]++;
         }
+        else{
+            numbers[i] = 0;
+        }
     }
 }
