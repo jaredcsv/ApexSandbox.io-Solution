@@ -5,7 +5,7 @@ public void plusOne(List<Integer> numbers) {
 
     strNumber = String.valueOf(intNumber);
     
-    List<Integer> withPlusOne = strNumber.split('');
+    List<Integer> withPlusOne = intNumber.split('');
 
     return withPlusOne;
 }
