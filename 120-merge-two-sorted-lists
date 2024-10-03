@@ -2,14 +2,17 @@ public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2)
     // solution
     List<Integer> mergedList = new List<Integer>();
 
-    for(Integer i = 0; i < list1.size(); i++){
-        for(Integer j = 0; j < list2.size(); j++){
-            if(list1[i] < list2[j]){
-                mergedList.add(list1[i]);
-            }
-            else{
-                mergedList.add(list2[j]);
-            }
+    Integer i = 0;
+    Integer j = 0;
+
+    while(i < list1.size() && j < list2.size()){
+        if(list1[i] < list2[j]){
+            mergedList.add(list1[i]);
+            i++;
+        }
+        else{
+            mergedList.add(list2[i]);
+            j++;
         }
     }
 
