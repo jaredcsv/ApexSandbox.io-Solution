@@ -6,6 +6,4 @@ public void plusOne(List<Integer> numbers) {
     strNumber = String.valueOf(intNumber);
     
     List<String> withPlusOne = strNumber.split('');
-
-    return withPlusOne;
 }
