@@ -7,5 +7,11 @@ public boolean isAnagram(String s1, String s2) {
     s1List.sort();
     s2List.sort();
 
-    return s1.equals(s2);
+    for(Integer = 0; i < s1List.size; i++){
+        if(s1List[i] == s2List[i]){
+            return true;
+        }
+    }
+
+    return false;
 }
