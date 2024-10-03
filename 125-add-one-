@@ -8,4 +8,8 @@ public void plusOne(List<Integer> numbers) {
 
         carry = sum / 10;
     }
+
+    if (carry > 0) {
+        numbers.add(0, carry);
+    }
 }
