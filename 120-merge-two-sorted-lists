@@ -11,7 +11,7 @@ public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2)
             i++;
         }
         else{
-            mergedList.add(list2[i]);
+            mergedList.add(list2[j]);
             j++;
         }
     }
