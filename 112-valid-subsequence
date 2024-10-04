@@ -6,7 +6,7 @@ public Boolean isSubSequence(String s1, String s2){
     Integer a = 0;
 
     for(Integer i = 0; i < s2List.size(); i++){
-        if(s2[i] == s1[a]){
+        if(s2[i] === s1[a]){
             return true;
             a++;
         }
