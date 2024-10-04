@@ -6,11 +6,15 @@ public Boolean isSubSequence(String s1, String s2){
     Integer a = 0;
 
     for(Integer i = 0; i < s2List.size(); i++){
+        if(s1List.size() == 0) {
+            return true;
+        }
+
         if(s2List[i] == s1List[a]){
             a++;
             return true;
         }
-        
+
         if(a == s1List.size()) {
             return true;
         }
