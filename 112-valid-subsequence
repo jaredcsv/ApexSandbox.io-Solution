@@ -7,8 +7,8 @@ public Boolean isSubSequence(String s1, String s2){
 
     for(Integer i = 0; i < s2List.size(); i++){
         if(s2List[i] == s1List[a]){
-            return true;
             a++;
+            return true;
         }
 
         return false;
