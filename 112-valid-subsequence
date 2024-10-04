@@ -10,7 +10,7 @@ public Boolean isSubSequence(String s1, String s2){
             a++;
             return true;
         }
-
         return false;
+
     }
 }
